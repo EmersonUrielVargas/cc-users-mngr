@@ -1,2 +1,61 @@
-# cc-users-mngr
-Manager to administrate API users in Challenge cloud with AWS
+<br />
+<div align="center">
+<h3 align="center">CC-USERS-MNGR</h3>
+  <p align="center">
+    Manager to administrate API users in Challenge cloud with AWS.
+  </p>
+</div>
+
+### Built With
+
+* ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+* ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+* ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white)
+* ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these steps.
+
+### Prerequisites
+
+* JDK 21 [https://jdk.java.net/java-se-ri/21](https://jdk.java.net/java-se-ri/11)
+* Gradle [https://gradle.org/install/](https://gradle.org/install/)
+* MySQL [https://dev.mysql.com/downloads/installer/](https://dev.mysql.com/downloads/installer/)
+
+### Recommended Tools
+* IntelliJ Community [https://www.jetbrains.com/idea/download/](https://www.jetbrains.com/idea/download/)
+* Postman [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
+
+### Installation
+
+1. Clone the repo
+2. Change directory
+   ```sh
+   cd cc-users-mngr
+   ```
+3. Create a new database in MySQL called users
+4. Update the database connection settings
+   ```yml
+   # src/main/resources/application.yml   
+   spring:
+      datasource:
+          url: jdbc:mysql://localhost/users
+          username: root
+          password: 1234
+   ```
+
+<!-- USAGE -->
+## Usage
+
+1. Right-click the class UsersApplication and choose Run
+2. Open [http://localhost:8086/api/mngr/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html) in your web browser
+
+<!-- ROADMAP -->
+## Tests
+
+- Right-click the test folder and choose Run tests with coverage
+
+
